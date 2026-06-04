@@ -210,3 +210,73 @@ document.addEventListener(
     "DOMContentLoaded",
     loadDashboard
 );
+/* ==========================
+   Authentication Demo
+========================== */
+
+function registerUser() {
+
+    const name =
+        document.getElementById("registerName").value;
+
+    const email =
+        document.getElementById("registerEmail").value;
+
+    const password =
+        document.getElementById("registerPassword").value;
+
+    const confirm =
+        document.getElementById("confirmPassword").value;
+
+    if (
+        !name ||
+        !email ||
+        !password
+    ) {
+        alert("Lengkapi semua data.");
+        return;
+    }
+
+    if (password !== confirm) {
+        alert("Password tidak sama.");
+        return;
+    }
+
+    localStorage.setItem(
+        "ecoampat_user",
+        JSON.stringify({
+            name,
+            email
+        })
+    );
+
+    alert("Registrasi berhasil.");
+
+    window.location.href =
+        "login.html";
+}
+
+function loginUser() {
+
+    const email =
+        document.getElementById("loginEmail").value;
+
+    const password =
+        document.getElementById("loginPassword").value;
+
+    if (!email || !password) {
+
+        alert(
+            "Masukkan email dan password."
+        );
+
+        return;
+    }
+
+    alert(
+        "Login berhasil.\nSelamat datang di EcoAmpat."
+    );
+
+    window.location.href =
+        "dashboard.html";
+}

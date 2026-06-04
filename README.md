@@ -1,84 +1,199 @@
-# EcoAmpat Smart Tourism Platform
+# 🏝️ EcoAmpat Smart Tourism
 
-EcoAmpat adalah platform Smart Tourism berbasis digital yang dirancang untuk mendukung pengelolaan pariwisata berkelanjutan di Raja Ampat.
+EcoAmpat adalah platform smart tourism untuk Raja Ampat berbasis AI.
 
-## Vision
+## 🌟 Fitur
+- Smart Destination Explorer
+- Booking Tour
+- AI Travel Recommendation
+- Tourism Dashboard
 
-Mewujudkan ekosistem pariwisata digital yang berkelanjutan, transparan, dan memberdayakan masyarakat lokal.
+## 🚀 Cara Run
+1. Download file
+2. Buka index.html
+3. Jalankan di browser
 
-## Features
+## 📌 Visi
+Menjadikan Papua sebagai Smart Tourism berbasis AI
+ecoampat-smart-tourism/
+│
+├── index.html
+├── dashboard.html
+├── destinations.html
+├── booking.html
+├── style.css
+├── app.js
+├── ai.js
+├── README.md
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EcoAmpat Smart Tourism</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-- Smart Tourist Dashboard
-- Digital Destination Guide
-- Environmental Monitoring
-- Eco-Friendly Travel Recommendations
-- Community-Based Tourism Support
-- Digital Ticketing System
-- Visitor Analytics
-- Government Monitoring Dashboard
-- Business Partner Management
-- Real-Time Tourism Insights
+<header>
+  <h1>🏝️ EcoAmpat</h1>
+  <p>Smart Tourism Platform Raja Ampat</p>
+</header>
 
-## Technology Stack
+<nav>
+  <a href="index.html">Home</a>
+  <a href="destinations.html">Destinasi</a>
+  <a href="booking.html">Booking</a>
+  <a href="dashboard.html">Dashboard</a>
+</nav>
 
-### Frontend
-- Flutter
-- React.js
+<section class="hero">
+  <h2>Explore Raja Ampat Smartly with AI</h2>
+  <button onclick="goDashboard()">Start Explore</button>
+</section>
 
-### Backend
-- Node.js
-- Express.js
+<script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Destinasi EcoAmpat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-### Database
-- PostgreSQL
+<h1>🏝️ Destinasi Wisata</h1>
 
-### Cloud Services
-- Firebase
-- AWS
+<div class="card">
+  <h3>Wayag Island</h3>
+  <p>Iconic karst islands view</p>
+</div>
 
-## Project Modules
+<div class="card">
+  <h3>Pianemo</h3>
+  <p>Best viewpoint Raja Ampat</p>
+</div>
 
-### Tourist App
-- Destination Discovery
-- Booking Services
-- Travel Planner
-- Eco Score Tracking
+<div class="card">
+  <h3>Misool</h3>
+  <p>Underwater paradise</p>
+</div>
 
-### Government Dashboard
-- Visitor Statistics
-- Revenue Analytics
-- Sustainability Monitoring
+<a href="index.html">⬅ Back</a>
 
-### Community Portal
-- Local Business Registration
-- Tourism Service Management
-- Community Reports
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking EcoAmpat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-## Project Status
+<h1>🚤 Booking Tour</h1>
 
-Prototype Development Phase
+<form>
+  <input placeholder="Nama">
+  <input placeholder="Tanggal Trip">
+  <select>
+    <option>Wayag Tour</option>
+    <option>Pianemo Tour</option>
+    <option>Misool Diving</option>
+  </select>
 
-## Roadmap
+  <button type="button" onclick="bookNow()">Book Now</button>
+</form>
 
-### Phase 1
-- UI/UX Design
-- Prototype Development
+<script src="app.js"></script>
 
-### Phase 2
-- Backend Development
-- Database Integration
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard EcoAmpat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-### Phase 3
-- Mobile Application Release
+<h1>📊 AI Tourism Dashboard</h1>
 
-### Phase 4
-- Government Dashboard Deployment
+<div class="card">
+  <h3>Wisatawan Hari Ini</h3>
+  <p>1,245 orang</p>
+</div>
 
-## License
+<div class="card">
+  <h3>Pulau Terpadat</h3>
+  <p>Pianemo</p>
+</div>
 
-MIT License
+<div class="card">
+  <h3>Revenue UMKM</h3>
+  <p>Rp 45.000.000</p>
+</div>
 
-## Author
+<a href="index.html">⬅ Back</a>
 
-Yohan Everd Daniel Kamat
-Digital Product Innovator
+</body>
+</html>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f0f8ff;
+}
+
+header {
+  background: #0099cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #006680;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+function goDashboard() {
+  window.location.href = "dashboard.html";
+}
+
+function bookNow() {
+  alert("Booking berhasil! Tim EcoAmpat akan menghubungi Anda.");
+}
+function aiRecommend(budget) {
+  if (budget < 3000000) {
+    return "Pianemo 1 hari + homestay";
+  } else if (budget < 7000000) {
+    return "Wayag + Pianemo 2 hari";
+  } else {
+    return "Full Raja Ampat Tour (Wayag + Misool + Pianemo)";
+  }
+}

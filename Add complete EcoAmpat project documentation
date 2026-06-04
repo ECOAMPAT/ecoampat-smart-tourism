@@ -1,0 +1,208 @@
+# 🏝️ EcoAmpat
+
+Platform Smart Tourism & Local Economy untuk Raja Ampat.
+
+EcoAmpat adalah platform digital yang bertujuan membantu wisatawan, masyarakat lokal, UMKM, pelaku usaha pariwisata, dan pemerintah daerah melalui satu ekosistem digital terpadu.
+
+---
+
+# 🌟 Visi
+
+Menjadi platform digital terdepan untuk mendukung pariwisata berkelanjutan dan pemberdayaan ekonomi lokal di Raja Ampat.
+
+---
+
+# 🎯 Misi
+
+- Mendukung promosi destinasi wisata Raja Ampat.
+- Membantu digitalisasi UMKM lokal.
+- Menyediakan informasi wisata yang mudah diakses.
+- Menghubungkan wisatawan dengan layanan lokal.
+- Mengembangkan solusi berbasis AI untuk analisis dan rekomendasi.
+
+---
+
+# 🚀 Fitur Utama
+
+## 🏝️ Destinasi Wisata
+
+- Informasi pulau wisata
+- Spot diving
+- Spot snorkeling
+- Pantai wisata
+- Galeri foto
+- Peta lokasi
+
+## 🏨 Penginapan
+
+- Homestay
+- Resort
+- Guest House
+- Informasi harga
+- Informasi kontak
+
+## 🚕 Transportasi Darat
+
+- Rental kendaraan
+- Transportasi lokal
+- Informasi rute
+
+## 🚢 Transportasi Laut
+
+- Kapal penyeberangan
+- Speed boat
+- Jadwal keberangkatan
+- Informasi pelabuhan
+
+## 🛍️ UMKM Lokal
+
+- Produk lokal
+- Kerajinan tangan
+- Kuliner khas
+- Produk perikanan
+
+## 📊 Dashboard Pemerintah
+
+- Statistik wisata
+- Statistik UMKM
+- Monitoring ekonomi lokal
+- Data kunjungan wisatawan
+
+## 🤖 AI Assistant
+
+- Rekomendasi destinasi wisata
+- Informasi perjalanan
+- Analisis data sederhana
+- Bantuan pencarian informasi
+
+---
+
+# 📍 Wilayah Fokus
+
+Platform ini berfokus pada kawasan Raja Ampat, Papua Barat Daya, Indonesia.
+
+Beberapa destinasi yang dapat didukung:
+
+- Waigeo
+- Misool
+- Salawati
+- Batanta
+- Piaynemo
+- Wayag
+- Arborek
+- Yenbuba
+- Friwen
+- Sawinggrai
+- Pasir Timbul
+- Teluk Kabui
+
+---
+
+# 💻 Teknologi
+
+## Frontend
+
+- Next.js
+- React
+- HTML
+- CSS
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Database
+
+- PostgreSQL
+
+## AI Engine
+
+- Python
+- FastAPI
+
+## Deployment
+
+- GitHub
+- Docker
+- Vercel
+
+---
+
+# 🏗️ Struktur Proyek
+
+```text
+ecoampat/
+├── README.md
+├── backend/
+├── frontend/
+├── ai-engine/
+├── database/
+├── docs/
+└── assets/
+```
+
+---
+
+# 📈 Roadmap
+
+## Phase 1
+
+- [x] Repository dibuat
+- [x] Dokumentasi awal
+- [x] Struktur proyek
+
+## Phase 2
+
+- [ ] Landing Page
+- [ ] Sistem Destinasi Wisata
+- [ ] Sistem UMKM
+- [ ] Sistem Transportasi
+
+## Phase 3
+
+- [ ] Dashboard Admin
+- [ ] Dashboard Pemerintah
+- [ ] AI Assistant
+
+## Phase 4
+
+- [ ] Mobile Application
+- [ ] Multi-language
+- [ ] Cloud Deployment
+
+---
+
+# 🤝 Kontribusi
+
+Kontribusi terbuka untuk pengembangan EcoAmpat.
+
+Langkah kontribusi:
+
+1. Fork repository
+2. Buat branch baru
+3. Lakukan perubahan
+4. Commit perubahan
+5. Buat Pull Request
+
+---
+
+# 📄 Lisensi
+
+MIT License
+
+---
+
+# 🌐 Status Proyek
+
+🚧 Dalam tahap pengembangan aktif.
+
+---
+
+# 📬 Kontak
+
+Repository ini digunakan sebagai pusat pengembangan platform EcoAmpat.
+
+---
+
+**EcoAmpat — Smart Tourism & Local Economy Platform for Raja Ampat**

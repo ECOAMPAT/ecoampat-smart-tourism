@@ -1,0 +1,153 @@
+backend/
+├── package.json
+├── server.js
+├── routes/
+│   ├── destinations.js
+│   ├── bookings.js
+│   ├── users.js
+│   └── umkm.js
+└── .env.example
+{
+  "name": "ecoampat-backend",
+  "version": "1.0.0",
+  "description": "EcoAmpat Smart Tourism Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.0",
+    "express": "^4.21.2"
+  }
+}
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+
+import destinationsRouter from "./routes/destinations.js";
+import bookingsRouter from "./routes/bookings.js";
+import usersRouter from "./routes/users.js";
+import umkmRouter from "./routes/umkm.js";
+
+dotenv.config();
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.json({
+    project: "EcoAmpat",
+    status: "running"
+  });
+});
+
+app.use("/api/destinations", destinationsRouter);
+app.use("/api/bookings", bookingsRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/umkm", umkmRouter);
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`EcoAmpat API running on port ${PORT}`);
+});
+import express from "express";
+
+const router = express.Router();
+
+router.get("/", (req, res) => {
+
+  res.json([
+    {
+      id: 1,
+      name: "Wayag"
+    },
+    {
+      id: 2,
+      name: "Piaynemo"
+    },
+    {
+      id: 3,
+      name: "Misool"
+    }
+  ]);
+
+});
+
+export default router;
+import express from "express";
+
+const router = express.Router();
+
+router.get("/", (req, res) => {
+
+  res.json([
+    {
+      id: 1,
+      customer: "Demo User",
+      package: "Wayag Tour"
+    }
+  ]);
+
+});
+
+router.post("/", (req, res) => {
+
+  res.json({
+    success: true,
+    message: "Booking created"
+  });
+
+});
+
+export default router;
+import express from "express";
+
+const router = express.Router();
+
+router.post("/login", (req, res) => {
+
+  res.json({
+    success: true,
+    token: "demo-token"
+  });
+
+});
+
+router.post("/register", (req, res) => {
+
+  res.json({
+    success: true,
+    message: "User registered"
+  });
+
+});
+
+export default router;
+
+import express from "express";
+
+const router = express.Router();
+
+router.get("/", (req, res) => {
+
+  res.json([
+    {
+      id: 1,
+      business: "Noken Papua"
+    },
+    {
+      id: 2,
+      business: "Kopi Papua"
+    }
+  ]);
+
+});
+
+export default router;
+PORT=5000

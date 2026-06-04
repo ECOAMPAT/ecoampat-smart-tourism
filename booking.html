@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EcoAmpat - Booking Tour</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚤 EcoAmpat Booking Center</h1>
+    <p>Pesan perjalanan Raja Ampat dengan mudah</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinasi</a>
+    <a href="booking.html">Booking</a>
+    <a href="dashboard.html">Dashboard</a>
+</nav>
+
+<section class="hero">
+    <h2>Booking Wisata Raja Ampat</h2>
+
+    <p>
+        Pilih paket wisata dan isi data perjalanan Anda.
+    </p>
+</section>
+
+<div class="container">
+
+<form>
+
+<label>Nama Lengkap</label>
+<input
+    type="text"
+    id="name"
+    placeholder="Masukkan nama lengkap"
+>
+
+<label>Email</label>
+<input
+    type="email"
+    id="email"
+    placeholder="Masukkan email"
+>
+
+<label>Nomor Telepon</label>
+<input
+    type="tel"
+    id="phone"
+    placeholder="Masukkan nomor telepon"
+>
+
+<label>Paket Wisata</label>
+<select id="package">
+
+<option value="Piaynemo Tour">
+Piaynemo Tour
+</option>
+
+<option value="Wayag Tour">
+Wayag Tour
+</option>
+
+<option value="Misool Tour">
+Misool Tour
+</option>
+
+<option value="Full Raja Ampat Experience">
+Full Raja Ampat Experience
+</option>
+
+</select>
+
+<label>Jumlah Peserta</label>
+<input
+    type="number"
+    min="1"
+    value="1"
+>
+
+<label>Tanggal Keberangkatan</label>
+<input type="date">
+
+<label>Catatan Tambahan</label>
+<textarea
+    rows="5"
+    placeholder="Tulis kebutuhan khusus..."
+></textarea>
+
+<br><br>
+
+<button
+    type="button"
+    class="btn"
+    onclick="bookNow()"
+>
+    Booking Sekarang
+</button>
+
+</form>
+
+</div>
+
+<section class="hero">
+
+<h2>🤖 AI Budget Recommendation</h2>
+
+<p>
+Masukkan budget Anda untuk mendapatkan rekomendasi perjalanan.
+</p>
+
+<input
+    type="number"
+    id="budget"
+    placeholder="Contoh: 5000000"
+    style="max-width:300px;padding:12px;"
+>
+
+<br><br>
+
+<button
+    class="btn"
+    onclick="aiRecommend()"
+>
+    Dapatkan Rekomendasi
+</button>
+
+<br><br>
+
+<div
+    id="aiResult"
+    class="card"
+    style="max-width:600px;margin:auto;"
+>
+    Hasil rekomendasi akan muncul di sini.
+</div>
+
+</section>
+
+<footer>
+    <p>
+        EcoAmpat Smart Tourism Platform © 2026
+    </p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>

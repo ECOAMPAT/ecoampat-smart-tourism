@@ -94,16 +94,49 @@ ecoampat-smart-tourism/
 ├── app.js
 ├── ai.js
 │
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── videos/
+│
 ├── backend/
 │   ├── server.js
+│   │
 │   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── booking.routes.js
+│   │   ├── destination.routes.js
+│   │   ├── umkm.routes.js
+│   │   └── dashboard.routes.js
+│   │
 │   ├── middleware/
-│   └── config/
+│   │   ├── auth.js
+│   │   └── admin.js
+│   │
+│   ├── config/
+│   │   ├── database.js
+│   │   └── jwt.js
+│   │
+│   └── controllers/
+│       ├── auth.controller.js
+│       ├── booking.controller.js
+│       ├── destination.controller.js
+│       └── umkm.controller.js
 │
 ├── database/
 │   ├── schema.sql
-│   └── seed.sql
+│   ├── seed.sql
+│   └── migration.sql
 │
+├── docs/
+│   ├── proposal.md
+│   ├── architecture.md
+│   └── api-documentation.md
+│
+├── .gitignore
+├── package.json
+├── LICENSE
+├── .env.example
 └── README.md
 
 ---
